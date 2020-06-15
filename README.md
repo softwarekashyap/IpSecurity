@@ -12,4 +12,8 @@ The IpSecurity extension has opened a new door for business doers, especially Ma
 
 ---
 
+![Alt text](KS_Ip_Configuration.png?raw=true "Magento2 Ip Security")
+
+---
+
 [![Alt text](https://www.kashyapsoftware.com/pub/media/logo/stores/1/ks_logo.png "kashyapsoftware.com")](https://www.kashyapsoftware.com/)
