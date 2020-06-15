@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!-- 
+
+/**
+ * @author Kashyap Team
+ * @copyright Copyright (c) 2018 Kashyap (http://kashyapsoftware.com/)
+ * @package Kashyap_IpSecurity
+*/
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<ip_restriction>
+			<general>
+				<status>0</status>
+				<block_ip>127.0.0.1|192.168.1.4</block_ip>
+				<redirect_blank>0</redirect_blank>
+			</general>
+		</ip_restriction>
+	</default>
+</config>

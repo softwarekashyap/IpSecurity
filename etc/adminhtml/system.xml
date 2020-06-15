@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!-- 
+
+/**
+ * @author Kashyap Team
+ * @copyright Copyright (c) 2018 Kashyap (http://kashyapsoftware.com/)
+ * @package Kashyap_IpSecurity
+*/
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+	<system>
+	    <tab id="Kashyap" translate="label" sortOrder="2000">
+            <label>Kashyap</label>
+        </tab>
+		<section id="ip_secutity" translate="label" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+			<class>separator-top</class>
+			<label>IP Security</label>
+			<tab>Kashyap</tab>
+			<resource>Kashyap_IpSecurity::config_ipsecurity</resource>
+			<group id="general" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>General Settings</label>
+				<field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+				<field id="block_ip" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="textarea">
+					<label>Block this IPs</label>
+					<comment><![CDATA[You can enter IP addresses, masks and ranges. Comments are added with character |. Each rule on separate row.<br>Example:<br>127.0.0.1|My address<br>10.*.*.*]]></comment>		
+					<depends>
+						<field id="active">1</field>
+					</depends>
+				</field>
+				
+				<field id="redirect_blank" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Redirect to blank page</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<comment><![CDATA[When blocking rule is triggered visitor will be redirected to a blank page with blocking rule description.]]></comment>		
+					<depends>
+						<field id="active">1</field>
+					</depends>
+				</field>
+
+				<field id="redirect_page" translate="label" type="select" sortOrder="40" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Redirect to CMS page</label>
+				    <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
+                    <comment><![CDATA[Visitor will not be notified about blocking rule redirection.]]></comment>		
+					<depends>
+						<field id="active">1</field>
+					</depends>
+				</field>
+
+			</group>
+		</section>
+	</system>
+</config>
