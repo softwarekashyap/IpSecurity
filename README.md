@@ -1,4 +1,4 @@
-# Mage2 Module Kashyap Ip Security
+# Magento 2 Ip Security
 
 The IpSecurity extension has opened a new door for business doers, especially Magento online merchants to a safer place in the battle with hackers. With numerous useful features offered by this extension, users are ensured to protect their stores better from being hacked. Among these outstanding features, Blacklist IPs seems to receive much attention from business doers.
 
@@ -11,3 +11,5 @@ The IpSecurity extension has opened a new door for business doers, especially Ma
 * Deply Static Content: `php bin/magento setup:static-content:deploy` Production Mode
 
 ---
+
+[![Alt text](https://www.kashyapsoftware.com/pub/media/logo/stores/1/ks_logo.png "kashyapsoftware.com")](https://www.kashyapsoftware.com/)
